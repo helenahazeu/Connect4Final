@@ -1,0 +1,81 @@
+
+(add-dm
+    (goal ISA initiation state start)
+)
+
+(p initiate
+    =goal>
+        ISA          initiation
+        state        start
+==>
+    =goal>
+        ISA         start
+        state       setup
+    +action>
+        ISA         setup
+)
+
+
+(p setup-possibilities
+    =goal>
+        ISA          start
+        state        setup
+    =action>
+        ISA          possibilities
+        complete2    =comp2
+        complete3    =comp3
+        complete4    =comp4
+        block4       =block4
+        block3       =block3
+        block2       =block2
+==>
+    =goal>
+        ISA          retrieval
+        state        retrieving
+    +retrieval>
+        ISA          scenario
+        complete2    =comp2
+        complete3    =comp3
+        complete4    =comp4
+        block4       =block4
+        block3       =block3
+        block2       =block2
+)
+
+
+(p retrieve-best-strategy
+    =goal>
+        ISA           retrieval
+        state         retrieving
+    =retrieval>
+        ISA           scenario
+        decision      =choice
+==>
+    =goal>
+        ISA          start
+        state        setup
+    +action>
+        ISA          move
+        decision     =choice
+        
+)
+
+(p failed-retrieval
+    =goal>
+        ISA         retrieval
+        state       retrieving
+    ?retrieval>
+        state       error
+==>
+    =goal>
+        ISA          start
+        state        setup
+    +action>
+        ISA         move
+        decision    random
+)
+
+
+
+
+(goal-focus goal)
