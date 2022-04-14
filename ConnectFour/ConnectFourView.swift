@@ -401,9 +401,8 @@ struct GameboardView: View {
                             }
                         }
                         .onTapGesture{
-                            if !self.game.player.isModel || self.game.winner != .none {
-                                self.game.insertCoin(at: column)
-                            }
+                            self.game.insertCoin(at: column)
+                                                        
                         }
                 }
             }.padding(1.5)

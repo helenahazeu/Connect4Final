@@ -30,10 +30,8 @@
 		79CF934927C3CF3F009AE430 /* ConnectFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF934827C3CF3F009AE430 /* ConnectFourTests.swift */; };
 		79CF935327C3CF3F009AE430 /* ConnectFourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF935227C3CF3F009AE430 /* ConnectFourUITests.swift */; };
 		79CF935527C3CF3F009AE430 /* ConnectFourTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF935427C3CF3F009AE430 /* ConnectFourTestsLaunchTests.swift */; };
-		79CF936227C3CFB3009AE430 /* Model_ConnectFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF936127C3CFB3009AE430 /* Model_ConnectFour.swift */; };
 		79CF936427C3CFCB009AE430 /* ConnectFourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF936327C3CFCB009AE430 /* ConnectFourViewModel.swift */; };
 		79CF936827CE1E22009AE430 /* ConnectFourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF936727CE1E22009AE430 /* ConnectFourModel.swift */; };
-		79CF936A27CE23F0009AE430 /* Board_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF936927CE23F0009AE430 /* Board_Model.swift */; };
 		79E466C327EB27B2002B4289 /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 79E466C227EB279A002B4289 /* Phosphate.ttc */; };
 		BD7B1A1827E32DE100FFBDE6 /* connect4model.actr in Resources */ = {isa = PBXBuildFile; fileRef = BD7B1A1727E32DE100FFBDE6 /* connect4model.actr */; };
 		BD7B1A3B27E335D000FFBDE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B1A2E27E3324400FFBDE6 /* Model.swift */; };
@@ -69,10 +67,8 @@
 		79CF934E27C3CF3F009AE430 /* ConnectFourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectFourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CF935227C3CF3F009AE430 /* ConnectFourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourUITests.swift; sourceTree = "<group>"; };
 		79CF935427C3CF3F009AE430 /* ConnectFourTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourTestsLaunchTests.swift; sourceTree = "<group>"; };
-		79CF936127C3CFB3009AE430 /* Model_ConnectFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model_ConnectFour.swift; sourceTree = "<group>"; };
 		79CF936327C3CFCB009AE430 /* ConnectFourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourViewModel.swift; sourceTree = "<group>"; };
 		79CF936727CE1E22009AE430 /* ConnectFourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourModel.swift; sourceTree = "<group>"; };
-		79CF936927CE23F0009AE430 /* Board_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_Model.swift; sourceTree = "<group>"; };
 		79E466C227EB279A002B4289 /* Phosphate.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phosphate.ttc; sourceTree = "<group>"; };
 		79E466C427EB27C9002B4289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD7B1A1727E32DE100FFBDE6 /* connect4model.actr */ = {isa = PBXFileReference; lastKnownFileType = text; path = connect4model.actr; sourceTree = "<group>"; };
@@ -170,7 +166,6 @@
 				BD7B1A3727E3324400FFBDE6 /* Parser.swift */,
 				BD7B1A2E27E3324400FFBDE6 /* Model.swift */,
 				BD7B1A3927E3324400FFBDE6 /* Chunk.swift */,
-				BDEC5CA127CE4EF8008F6E70 /* trash */,
 				79CF936727CE1E22009AE430 /* ConnectFourModel.swift */,
 				BD7B1A3A27E3324400FFBDE6 /* Production.swift */,
 				BD7B1A3827E3324400FFBDE6 /* Declarative.swift */,
@@ -233,15 +228,6 @@
 				BD7B1A2A27E3323C00FFBDE6 /* Production.swift */,
 			);
 			path = "ACT-R";
-			sourceTree = "<group>";
-		};
-		BDEC5CA127CE4EF8008F6E70 /* trash */ = {
-			isa = PBXGroup;
-			children = (
-				79CF936927CE23F0009AE430 /* Board_Model.swift */,
-				79CF936127C3CFB3009AE430 /* Model_ConnectFour.swift */,
-			);
-			path = trash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,8 +368,6 @@
 				7926730927E344AD00EF6853 /* Support.swift in Sources */,
 				792672FE27E344AD00EF6853 /* Instantiation.swift in Sources */,
 				792672FD27E344AD00EF6853 /* BufferCondition.swift in Sources */,
-				79CF936A27CE23F0009AE430 /* Board_Model.swift in Sources */,
-				79CF936227C3CFB3009AE430 /* Model_ConnectFour.swift in Sources */,
 				79CF936427C3CFCB009AE430 /* ConnectFourViewModel.swift in Sources */,
 				79CF936827CE1E22009AE430 /* ConnectFourModel.swift in Sources */,
 				7926730727E344AD00EF6853 /* Tokenizer.swift in Sources */,

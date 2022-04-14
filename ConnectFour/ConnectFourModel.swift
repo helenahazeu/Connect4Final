@@ -174,8 +174,8 @@ struct Connect4Model {
     mutating func resetGrid() {
         let resetCols = Array(repeating: Coin.white, count: cols)
         gameGrid = Array(repeating: resetCols, count:rows)
-        winner = .none
         stalemateview = false
+        winner = .none
         isFirstMove = true
     }
     

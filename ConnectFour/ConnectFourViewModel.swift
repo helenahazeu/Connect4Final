@@ -42,7 +42,7 @@ class Connect4ViewModel: ObservableObject {
             
             gamemodel.insertCoin(at: selectedCol)
        
-            if gamemodel.player.isModel && gamemodel.winner == .none {
+            if gamemodel.player.isModel && gamemodel.winner == .none && gamemodel.stalemateview == false {
                 let seconds0 = 0.5
                 DispatchQueue.main.asyncAfter(deadline: .now() + seconds0){
                     self.modelAction()
